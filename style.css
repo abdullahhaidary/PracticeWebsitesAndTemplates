@@ -1,0 +1,229 @@
+.header{
+    position:fixed;
+    overflow:hidden;
+    display:grid;
+    height:7vh;
+    background-color: black;
+    color:white;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items:center;
+}
+.header .header-links{
+    margin:0;
+    display:grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+.header .header-links a{
+    font-size:20pt;
+}
+.header .header-links div:hover{
+    background-color:red;
+}
+.header-search{
+    display:flex;
+    justify-content:flex-end;
+    height: 100%;
+    align-items:center
+}
+.search{
+    padding:2vh 3vh 2vh 3vh;
+}
+.search:hover{
+    cursor:pointer;
+    background-color:red;
+}
+.first-section-image>img{
+    width:100%;
+    height:100%;
+}
+.body-second{
+    display:grid;
+    justify-content: center;
+    align-content:center;
+    text-align: center;
+    margin-top:7vh;
+    height:100vh;
+}
+.body-paragraph{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.body-images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.body-second-section{
+    height:128vh;
+    background-color: #000000;
+    color:white;
+    text-align: center;
+}
+.tour-months{
+    display:grid;
+    background-color:white;
+    color:black;
+    grid-template-rows: repeat(3,1fr);
+}
+.tour-months .tour-month{
+    display:flex;
+    align-items:center;
+    padding:3px 0 3px 0;
+    border-bottom: #000000 solid;
+}
+.tour-months .tour-month p{
+    margin:0;
+}
+.tour-months .tour-month span{
+    background-color:red;
+    display:flex;
+    align-content:center;
+    padding:5px 2px 5px 2px;
+    color:white;
+    font-weight: bolder;
+}
+.tour-month-single{
+    display:flex;
+    justify-content:space-between
+}
+.tour-month-single span{
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:30px; 
+    height:30px;
+    margin-right:30px;
+}
+.tour-images{
+    margin:10vh 0 0 0 ;
+    display:grid;
+    gap:2vh;
+    grid-template-columns: repeat(3,1fr);
+}
+.contact-section{
+    display:grid;
+    height:70vh;
+    grid-template-rows: 1fr 3fr;
+}
+.contact-section-address{
+    width:50%;
+}
+
+.contact-section-form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
+    width:100%;
+}
+.third-section img{
+    width:100%;
+}
+
+
+@media(max-width:800px){
+    .header{
+        position:static;
+        display:grid;
+        height:7vh;
+        background-color: black;
+        color:white;
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .body-section>img{
+        width:100%;
+        height:100%;
+    }
+
+    .body-images{
+        display:block;
+        position:static;
+    }
+
+    .body-second{
+        display:block;
+        justify-content: center;
+        align-content:center;
+        text-align: center;
+        height:100%;
+        padding-bottom: 3vh;
+    }
+    .body-paragraph{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    
+    
+    .body-second-section{
+        height:100%;
+        margin-bottom:3vh;
+        background-color:#000000;
+        color:white;
+        text-align: center;
+    }
+
+    .tour-months .tour-month{
+        display:flex;
+        align-items:center;
+        padding:3px 0 3px 0;
+        border-bottom: #000000 solid;
+    }
+
+    .tour-months .tour-month p{
+        margin:0;
+    }
+
+    .tour-months .tour-month span{
+        background-color:red;
+        display:flex;
+        align-content:center;
+        padding:5px 2px 5px 2px;
+        color:white;
+        font-weight: bolder;
+    }
+    .tour-month-single{
+        display:flex;
+        width:fit-content;
+
+        justify-content:space-between
+    }
+    .tour-month-single span{
+        border-radius: 50%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:30px; 
+        height:30px;
+        margin-right:30px;
+    }
+    .single-tour-image img{
+        width:100%;
+    }
+    .tour-images{
+        margin:10vh 0 0 0 ;
+        display:grid;
+        gap:2vh;
+        grid-template-columns: 1fr;
+    }
+    .contact-section{
+        display:grid;
+        height:70vh;
+        grid-template-rows: 1fr 3fr;
+    }
+    .contact-section-address{
+        width:50%;
+    }
+    
+    .contact-section-form{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:5px;
+        width:100%;
+    }
+
+}
